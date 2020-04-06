@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>PLISE購買</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top">
+      <span class="navbar-brand mb-0 h1">PLISE 購買</span>
+      <form class="form-inline">
+        <span style="color: white;">小計 &yen;</span>
+        <span class="navbar-text" id="subtotal" style="color: white; margin-right: 1rem;">
+          0
+        </span>
+        <button class="btn btn-primary my-2 my-sm-0" id="buy" type="button">Buy</button>
+        
+      </form>
+
+      
+    </nav>
+
+    <!-- carousel -->
+    <div id="carouselIndicators" class="carousel slide" style="background-color: #2a3556;" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="image-wrapper">
+            <img src="./image/carousel/suntry_monster_400.png" />
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>MONSTER ENERGY</h5>
+            <p>1本あたり200円(税込)</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-wrapper">
+            <img src="./image/carousel/coca_cola_400.png" />
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Coca-Cola</h5>
+            <p>1本あたり100円(税込)</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-wrapper">
+            <img src="./image/carousel/costoco_water_400.png" />
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Water</h5>
+            <p>1本あたり50円(税込)</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- main -->
+    <main>
+      <div class="container">
+        <div class="row">
+          
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/monster.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">MONSTER ENERGY</h5>
+              <h5 class="card-title">
+              </h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1本あたり 200円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="200" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/monster_zero.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">MONSTER ENERGY ABUSOLUTELY ZERO</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1本あたり 200円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="200" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/costoco_water.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">KIRKLAND WATER</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1本あたり 50円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="50" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/cocacola.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">CocaCola</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1本あたり 100円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="100" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/e3.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">E3</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1本あたり 100円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="100" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/shark.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">SHARK</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1本あたり 100円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="100" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/oneday_black.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">FIRE ONEDAY BLACK</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1本あたり 100円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="100" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/aporo_chocolate.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">アポロ チョコレート</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1個あたり 30円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="30" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/tabekko_animal.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">たべっ子どうぶつ</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1個あたり 30円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="30" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/takenoko_vil.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">たけのこの里</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1個あたり 30円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="30" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card item-card" style="width: 18rem;">
+            <img src="./image/card/oyatsu_karupasu.png" class="card-img-top item-img" />
+            <div class="card-body">
+              <h5 class="card-title">おやつカルパス</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1個あたり 10円(税込)</li>
+            </ul>
+            <div class="card-footer" style="background-color: white;">
+              <div class="input-group">
+                <input class="item-value" type="hidden" value="30" />
+                <input class="form-control item-amount" type="number" value=0 min=0 />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">数量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" style="width: 100%;" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">支払いQRコード</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+              <div class="card text-center" id="kyash">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link kyash-link active disabled" href="#">Kyash</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link paypay-link" href="#">PayPay</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link linepay-link" href="#">LINEPay</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link jcoin-link" href="#">Jcoin</a>
+                    </li>
+                  </ul>
+                </div>
+                <img src="./image/modal/kyash_qrcode.png" class="card-img-top qr-img" />
+                <div class="card-body">
+                  <h5 class="card-title">Kyash</h5>
+                  <p class="card-text">ID: naoto24kawa</p>
+                </div>
+              </div>
+  
+              <div class="card text-center d-none" id="paypay">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link kyash-link" href="#">Kyash</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link paypay-link active disabled" href="#">PayPay</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link linepay-link" href="#">LINEPay</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link jcoin-link" href="#">Jcoin</a>
+                    </li>
+                  </ul>
+                </div>
+                <img src="./image/modal/paypay_qrcode.png" class="card-img-top  qr-img" />
+                <div class="card-body">
+                  <h5 class="card-title">PayPay</h5>
+                  <p class="card-text">ID: naoto24kawa</p>
+                </div>
+              </div>
+
+              <div class="card text-center d-none" id="linepay">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link kyash-link" href="#">Kyash</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link paypay-link" href="#">PayPay</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link linepay-link active disabled" href="#">LINEPay</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link jcoin-link"href="#">Jcoin</a>
+                    </li>
+                  </ul>
+                </div>
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">LINE Pay</text></svg>
+                <div class="card-body">
+                  <h5 class="card-title">LINEPay</h5>
+                  <p class="card-text">ID: naoto24kawa</p>
+                </div>
+              </div>
+
+              <div class="card text-center d-none" id="jcoin">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link kyash-link" href="#">Kyash</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link paypay-link" href="#">PayPay</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link  linepay-link" href="#">LINEPay</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link jcoin-link active disabled"href="#">Jcoin</a>
+                    </li>
+                  </ul>
+                </div>
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Jcoin</text></svg>
+                <div class="card-body">
+                  <h5 class="card-title">Jcoin</h5>
+                  <p class="card-text">ID: naoto24kawa</p>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <h3 style="margin-right: 1rem;"><span>&yen;</span><span id="total">0</span></h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

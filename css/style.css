@@ -1,0 +1,37 @@
+body {
+    background-color: #171a23;
+}
+
+main {
+    margin-top: 1rem;
+}
+
+.navbar {
+    background-color: #1b2440;
+}
+
+.navbar-brand {
+    color: #efeff4;
+}
+
+.image-wrapper {
+    text-align: center;
+}
+
+.card {
+    margin: 0.5rem;
+}
+
+.item-img {
+    height: 160px;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.qr-img {
+    height: 160px;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
