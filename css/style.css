@@ -18,8 +18,26 @@ main {
     text-align: center;
 }
 
+.carousel {
+    background-color: #2a3556;
+}
+
 .card {
     margin: 0.5rem;
+}
+
+.item-card {
+    background-color: #1b2440;
+    color: #efeff4;
+}
+
+.list-group-item {
+    background-color: #1b2440;
+}
+
+.item-amount {
+    background-color: #2a3556;
+    color: #efeff4;
 }
 
 .item-img {
