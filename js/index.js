@@ -14,7 +14,8 @@ const PRODUCTS = [
     { name: "じゃがりこ", price: 100, img: "no_image.png" },
     // { name: "おやつカルパス", price: 10, img: "oyatsu_karupasu.png" },
     // { name: "午後の紅茶 無糖", price: 100, img: "afternoon_tea_no_suger.png" },
-    // { name: "ラムネ", price: 30, img: "ramune.jpg" },
+    { name: "ラムネ", price: 30, img: "ramune.jpg" },
+    { name: "日本のお茶(POM)", price: 100, img: "nihon_no_ocha_pom.jpg" },
 ];
 
 $(function() {
