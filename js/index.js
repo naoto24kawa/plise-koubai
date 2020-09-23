@@ -8,7 +8,7 @@ const PRODUCTS = [
     // { name: "E3", price: 100, img: "e3.png" },
     // { name: "SHARK", price: 100, img: "shark.png" },
     // { name: "FIRE ONEDAY BLACK", price: 100, img: "oneday_black.png" },
-    { name: "アポロ チョコレート", price: 30, img: "aporo_chocolate.png" },
+    { name: "アポロ チョコレート※ごめん、ちょっと溶けてた", price: 30, img: "aporo_chocolate.png" },
     { name: "たべっ子どうぶつ", price: 30, img: "tabekko_animal.png" },
     { name: "たけのこの里", price: 30, img: "takenoko_vil.png" },
     { name: "じゃがりこ", price: 100, img: "no_image.png" },
@@ -16,6 +16,7 @@ const PRODUCTS = [
     // { name: "午後の紅茶 無糖", price: 100, img: "afternoon_tea_no_suger.png" },
     { name: "ラムネ", price: 30, img: "ramune.jpg" },
     { name: "日本のお茶(POM)", price: 100, img: "nihon_no_ocha_pom.jpg" },
+    { name: "どん兵衛 肉だしうどん", price: 100, img: "donbei_nikudashi_udon.jpg" },
 ];
 
 $(function() {
